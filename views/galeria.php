@@ -72,7 +72,7 @@ if (session_status() == PHP_SESSION_NONE) {
         </header>
         <!-- CUERPO PRINCIPAL-->
         <main class="mi_principal">
-            <h2>Galería</h2>
+            <h2 class="efecto_inicial_titulos">Galería</h2>
 
             <section class="galeria-container">
                 <div class="galeria">
@@ -86,6 +86,8 @@ if (session_status() == PHP_SESSION_NONE) {
                     <img src="../assets/images/8.jpeg" alt="Grupo Crear SRL">
                     <img src="../assets/images/9.jpeg" alt="Grupo Crear SRL">
                     <img src="../assets/images/10.jpeg" alt="Grupo Crear SRL">
+                    <img src="../assets/images/11.jpg" alt="Grupo Crear SRL">
+                    <img src="../assets/images/12.jpg" alt="Grupo Crear SRL">
                 </div>
             </section>
 

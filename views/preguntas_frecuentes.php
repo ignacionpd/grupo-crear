@@ -75,7 +75,7 @@ if (session_status() == PHP_SESSION_NONE) {
 
             <!-- CABECERA FAQ (STICKY) -->
             <div class="faq-header">
-                <h2>Preguntas frecuentes</h2>
+                <h2 class="efecto_inicial_titulos">Preguntas frecuentes</h2>
                 <details class="faq-dropdown">
                     <summary>Ver todas las preguntas</summary>
                     <nav class="faq-nav">

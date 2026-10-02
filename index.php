@@ -75,7 +75,7 @@ if (session_status() == PHP_SESSION_NONE) {
         <main class="mi_principal">
 
             <section>
-                <h2>¿Quiénes somos?</h2>
+                <h2 class="efecto_inicial_titulos">¿Quiénes somos?</h2>
                 <div class="contenedor_presentacion">
                     <div>
                         <img src="./assets/images/articulo_gas_natural_ban.png" alt="Grupo Crear SRL Naturgy">
@@ -92,8 +92,8 @@ if (session_status() == PHP_SESSION_NONE) {
             </section>
 
             <!-- CAROUSEL -->
-            <section>
-                <div class="carousel-container">
+            <section >
+                <div class="carousel-container efecto_vertical">
 
                     <div class="carousel-fade">
 
@@ -136,6 +136,14 @@ if (session_status() == PHP_SESSION_NONE) {
                         <div class="carousel-slide">
                             <img src="./assets/images/10.jpeg" alt="Grupo Crear SRL">
                         </div>
+                        
+                        <div class="carousel-slide">
+                            <img src="./assets/images/11.jpg" alt="Grupo Crear SRL">
+                        </div>
+                        
+                        <div class="carousel-slide">
+                            <img src="./assets/images/12.jpg" alt="Grupo Crear SRL">
+                        </div>
 
                         <!-- Flechas -->
                         <button class="carousel-btn prev">&#10094;</button>
@@ -147,15 +155,16 @@ if (session_status() == PHP_SESSION_NONE) {
             </section>
 
             <section class="enlaces-container">
-                <h2>Algunos de nuestros clientes</h2>
+                <h2 class="efecto_horizontal">Algunos de nuestros clientes</h2>
 
-                <div class="enlaces">
+                <div class="enlaces efecto_vertical">
                     <img src="./assets/images/logos_clientes/muni_sanmi.png" alt="Grupo Crear SRL">
                     <img src="./assets/images/logos_clientes/muni_tigre.png" alt="Grupo Crear SRL">
                     <img src="./assets/images/logos_clientes/molinos.png" alt="Grupo Crear SRL">
                     <img src="./assets/images/logos_clientes/migusto.png" alt="Grupo Crear SRL">
                     <img src="./assets/images/logos_clientes/mostaza.png" alt="Grupo Crear SRL">
                     <img src="./assets/images/logos_clientes/nordelta.png" alt="Grupo Crear SRL">
+                    <img src="./assets/images/logos_clientes/sportclub.png" alt="Grupo Crear SRL">
                     <img src="./assets/images/logos_clientes/san_andres.png" alt="Grupo Crear SRL">
                     <img src="./assets/images/logos_clientes/standrews.png" alt="Grupo Crear SRL">
                     <img src="./assets/images/logos_clientes/marin.png" alt="Grupo Crear SRL">
@@ -227,6 +236,7 @@ if (session_status() == PHP_SESSION_NONE) {
     </div>
 
     <script src="./assets/scripts/carousel.js"></script>
+    <script src="./assets/scripts/efectos.js"></script>
 </body>
 
 </html>

@@ -77,7 +77,7 @@ $old = getFlash('old') ?? [];
         <!-- CUERPO PRINCIPAL-->
         <main class="mi_principal">
 
-            <h2>Contacto</h2>
+            <h2 class="efecto_inicial_titulos">Contacto</h2>
             <div class="aviso_registro">
                 <?php
                 # Comprobar si hay mensajes de error
