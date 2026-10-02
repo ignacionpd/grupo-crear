@@ -1,3 +1,4 @@
 .vscode/
+/controllers/.env.php
 /controllers/config.php
 /controllers/contacto-errors.log
