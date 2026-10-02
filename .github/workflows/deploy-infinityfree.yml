@@ -1,0 +1,44 @@
+name: Desplegar Grupo Crear en InfinityFree
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-grupo-crear-production
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    name: Subir cambios por FTP
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Obtener el proyecto
+        uses: actions/checkout@v4
+
+      - name: Instalar cliente FTP
+        run: sudo apt-get update && sudo apt-get install --yes lftp
+
+      - name: Publicar en la carpeta correcta
+        env:
+          FTP_HOST: ${{ secrets.INFINITYFREE_FTP_HOST }}
+          FTP_USERNAME: ${{ secrets.INFINITYFREE_FTP_USERNAME }}
+          FTP_PASSWORD: ${{ secrets.INFINITYFREE_FTP_PASSWORD }}
+          FTP_REMOTE_DIR: ${{ secrets.INFINITYFREE_GRUPO_CREAR_DIR }}
+        run: |
+          lftp <<EOF
+          set ftp:ssl-allow no
+          set net:max-retries 2
+          set net:timeout 20
+          open -u "$FTP_USERNAME","$FTP_PASSWORD" "$FTP_HOST"
+          mirror --reverse --only-newer --verbose \
+            --exclude-glob .git* \
+            --exclude-glob .github \
+            --exclude-glob controllers/config.php \
+            --exclude-glob controllers/contacto-errors.log \
+            ./ "$FTP_REMOTE_DIR"
+          bye
+          EOF
