@@ -34,6 +34,6 @@ jobs:
           set net:max-retries 2
           set net:timeout 20
           open -u "$FTP_USERNAME","$FTP_PASSWORD" "$FTP_HOST"
-          mirror --reverse --only-newer --no-perms --verbose --exclude=^\.git/ --exclude=^\.github/ --exclude=^controllers/config\.php$ --exclude=^controllers/contacto-errors\.log$ ./ "$FTP_REMOTE_DIR"
+          mirror --reverse --only-newer --no-perms --verbose --exclude=^\.git/ --exclude=^\.github/ --exclude=^controllers/config\.php$ --exclude=^controllers/.env\.php$ --exclude=^controllers/contacto-errors\.log$ ./ "$FTP_REMOTE_DIR"
           bye
           EOF
