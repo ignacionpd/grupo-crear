@@ -54,6 +54,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['contactarse'])) {
     }
 
     $mail = new PHPMailer(true);
+
+        /*** A continuación cargaremos en la variable $cfg las credenciales SMTP para configurar el PHPMailer. Hay que hacer previamente un archivo ".config.php" dentro de esta carpeta (controllers) para proteger la información del servidor y cargar la siguiente información:
+    return [
+        'smtp_host' => 'smtp.xxxxx.xxxx',
+        'smtp_port' => (puerto SMTP),
+        'smtp_user' => 'dirección de correo electrónico',
+        'smtp_pass' => 'contraseña de aplicación',
+        'to_email'  => 'dirección de correo electrónico',
+    ]; ****/
     $cfg = require __DIR__ . '/config.php';
 
     try {
