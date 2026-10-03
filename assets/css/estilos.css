@@ -9,6 +9,11 @@
     box-sizing: border-box;
 }
 
+:root {
+  /* Definir las propiedades reutilizables */
+  --color-naranja: rgb(211, 95, 0);
+}
+
 @font-face {
     font-family: "Montserrat";
     src: url(./Montserrat/Montserrat-VariableFont_wght.ttf);
@@ -48,7 +53,7 @@ body {
 
 .mi_pie {
     grid-area: footer;
-    background: linear-gradient(to bottom right, rgb(126, 126, 131), black);
+    background: linear-gradient(to bottom right, var(--color-naranja), black);
     margin-top: 30px;
     display: flex;
     align-items: center;
@@ -84,7 +89,7 @@ body {
 .cabecera_logo {
     height: auto;
     margin-bottom: 20px;
-    background: linear-gradient(to right, #ffffff 43%, rgb(160, 160, 160) 100%);
+    background: linear-gradient(to right, #ffffff 43%, var(--color-naranja) 100%);
 }
 
 .contenedor_logo {
@@ -222,13 +227,14 @@ h3 {
 }
 
 .enlace:hover {
-    color: rgb(0, 0, 0);
+    color: var(--color-naranja);
     transform: scale(1.10);
 }
 
 .enlace.active {
-    background-color: black;
+    background-color: var(--color-naranja);
     color: white;
+    /* -webkit-text-stroke: 1px #000000; /* El grosor y color del borde */
 }
 
 /* ESTILOS FOOTER */
@@ -786,7 +792,7 @@ h2 {
     align-items: center;
     padding: 1.5rem;
     border-radius: 20px;
-    border: 1px solid black;
+    border: 5px solid var(--color-naranja);
     background-color: #d6d4d4;
     max-width: 530px;
     margin: 0;
@@ -806,7 +812,7 @@ h2 {
     max-width: 530px;
     margin: 0;
     border-radius: 20px;
-    border: 1px solid black;
+    border: 5px solid var(--color-naranja);
     background-color: #d6d4d4;
 }
 

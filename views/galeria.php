@@ -28,7 +28,7 @@ if (session_status() == PHP_SESSION_NONE) {
         <header class="mi_encabezado">
             <div class="cabecera_logo">
                 <div class="contenedor_logo">
-                    <img src="../assets/images/logo.png" alt="logo Grupo Crear SRL">
+                    <img src="../assets/images/logo_simbolo.png" alt="logo Grupo Crear SRL">
 
                     <div class="contenedor_empresa">
                         <h1>Grupo CREAR SRL</h1>
@@ -123,7 +123,7 @@ if (session_status() == PHP_SESSION_NONE) {
 
                 <!-- LOGO GRUPO CREAR SRL -->
                 <div class="logo_pie">
-                    <img src="../assets/images/logo.png" alt="logo Grupo CREAR SRL">
+                    <img src="../assets/images/logo_simbolo.png" alt="logo Grupo CREAR SRL">
                     <div>
                         <p>Grupo CREAR SRL</p>
                         <span>Instalaciones - Construcciones</span>
