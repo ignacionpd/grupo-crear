@@ -90,7 +90,7 @@ body {
     height: auto;
     margin-bottom: 20px;
     background: #ffffff;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 40%, rgba(245, 82, 0, 1) 91%, rgba(0, 0, 0, 0.83) 100%);
+    background: linear-gradient(120deg, rgba(255, 255, 255, 1) 40%, rgba(245, 82, 0, 1) 60%, rgba(0, 0, 0, 0.83) 100%);
 }
 
 .contenedor_logo {
@@ -98,7 +98,7 @@ body {
     align-items: stretch;
     max-width: 740px;
     margin-left: 60px;
-        padding: 10px 0;
+    padding: 10px 0;
 }
 
 .contenedor_logo img {
@@ -1563,6 +1563,11 @@ h2 {
         margin: 2em;
     }
 
+    .cabecera_logo {
+        background: linear-gradient(120deg, rgba(255, 255, 255, 1) 60%, rgba(245, 82, 0, 1) 80%, rgba(0, 0, 0, 0.83) 100%);
+
+    }
+
     .contenedor_logo {
         margin-left: 20px;
         padding-left: 20px;
@@ -1796,6 +1801,7 @@ h2 {
     .cabecera_logo {
         display: flex;
         justify-content: center;
+        background: linear-gradient(120deg, rgba(255, 255, 255, 1) 60%, rgba(245, 82, 0, 1) 90%, rgba(0, 0, 0, 0.83) 100%);
     }
 
     .contenedor_logo {
@@ -2067,6 +2073,8 @@ h2 {
         display: flex;
         justify-content: center;
         margin-bottom: 10px;
+        background: linear-gradient(120deg, rgba(255, 255, 255, 1) 70%, rgba(245, 82, 0, 1) 90%, rgba(0, 0, 0, 0.83) 100%);
+
     }
 
     .contenedor_logo {
