@@ -13,7 +13,7 @@ if (session_status() == PHP_SESSION_NONE) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grupo CREAR SRL</title>
+    <title>Inicio | Grupo CREAR SRL</title>
     <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/estilos.css">
     <!-- FAVICON -->
@@ -27,13 +27,14 @@ if (session_status() == PHP_SESSION_NONE) {
     <div class="mi_contenedor">
         <!-- HEADER -->
         <header class="mi_encabezado">
-            <div class="cabecera_logo">
+            <div class="cabecera_logo" id="cabecera_logo">
                 <div class="contenedor_logo">
                     <img src="./assets/images/logo_simbolo.png" alt="logo Grupo Crear SRL">
 
                     <div class="contenedor_empresa">
                         <h1>Grupo CREAR SRL</h1>
-                        <p class="texto_logo">Instalaciones - Construcciones</p>
+                        <p class="texto_logo">Instalaciones y Rehabilitaciones</p>
+                        <p class="texto_logo">de Gas Natural</p>
                     </div>
                 </div>
             </div>
@@ -92,7 +93,7 @@ if (session_status() == PHP_SESSION_NONE) {
             </section>
 
             <!-- CAROUSEL -->
-            <section >
+            <section>
                 <div class="carousel-container efecto_vertical">
 
                     <div class="carousel-fade">
@@ -136,11 +137,11 @@ if (session_status() == PHP_SESSION_NONE) {
                         <div class="carousel-slide">
                             <img src="./assets/images/10.jpeg" alt="Grupo Crear SRL">
                         </div>
-                        
+
                         <div class="carousel-slide">
                             <img src="./assets/images/11.jpg" alt="Grupo Crear SRL">
                         </div>
-                        
+
                         <div class="carousel-slide">
                             <img src="./assets/images/12.jpg" alt="Grupo Crear SRL">
                         </div>
@@ -219,7 +220,8 @@ if (session_status() == PHP_SESSION_NONE) {
                     <img src="./assets/images/logo_simbolo.png" alt="logo Grupo CREAR SRL">
                     <div>
                         <p>Grupo CREAR SRL</p>
-                        <span>Instalaciones - Construcciones</span>
+                        <span>Instalaciones y Rehabilitaciones</span>
+                        <span>de Gas Natural</span>
                     </div>
                 </div>
 

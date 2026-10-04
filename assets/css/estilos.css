@@ -10,8 +10,8 @@
 }
 
 :root {
-  /* Definir las propiedades reutilizables */
-  --color-naranja: rgb(211, 95, 0);
+    /* Definir las propiedades reutilizables */
+    --color-naranja: rgb(211, 95, 0);
 }
 
 @font-face {
@@ -89,14 +89,16 @@ body {
 .cabecera_logo {
     height: auto;
     margin-bottom: 20px;
-    background: linear-gradient(to right, #ffffff 43%, var(--color-naranja) 100%);
+    background: #ffffff;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 40%, rgba(245, 82, 0, 1) 91%, rgba(0, 0, 0, 0.83) 100%);
 }
 
 .contenedor_logo {
     display: flex;
     align-items: stretch;
     max-width: 740px;
-    padding-left: 60px;
+    margin-left: 60px;
+        padding: 10px 0;
 }
 
 .contenedor_logo img {
@@ -109,7 +111,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: white;
     animation: slideFade 0.8s ease-out forwards;
     animation-delay: 0.30s;
 }
@@ -330,7 +331,7 @@ h3 {
 .logo_pie div span {
     font-size: 20px;
     display: flex;
-    justify-content: center;
+    justify-content: left;
 }
 
 .contacto_pie_email {
@@ -904,7 +905,7 @@ h2 {
 }
 
 .faq-dropdown summary {
-    background: #447fff;
+    background: var(--color-naranja);
     color: white;
     padding: 16px 20px;
     border-radius: 8px;
@@ -935,7 +936,7 @@ h2 {
     top: 110%;
     left: 0;
     width: 100%;
-    background: #447fff;
+    background: var(--color-naranja);
     border-radius: 8px;
     padding: 10px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
@@ -973,7 +974,7 @@ h2 {
 }
 
 .faq-link.active {
-    background: #0063f8;
+    background: orange;
     color: white;
     box-shadow: 0 4px 12px rgba(13, 110, 253, 0.3);
 }
