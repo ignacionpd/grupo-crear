@@ -14,6 +14,8 @@ if (!isset($_SESSION['user_data'])) {
     exit;
 }
 
+/** @var mysqli $mysqli_connection  esto hace que la extensión "intelephense" de PHP sepa que es una variable global (de un controlador) y no de este**/
+
 $old = getFlash('old') ?? [];
 
 try {
@@ -30,7 +32,7 @@ try {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grupo CREAR SRL</title>
+    <title>Usuarios | Grupo CREAR SRL</title>
     <!-- CSS -->
     <link rel="stylesheet" href="../../assets/css/estilos.css">
     <!-- FAVICON -->
@@ -72,7 +74,6 @@ try {
                 </ul>
 
                 <ul class="navigationBarListUser">
-                    <li><a class="enlace" href="./solicitudes.php">Solicitudes</a></li>
                     <li><a class="enlace active" href="#">Usuarios</a></li>
                     <li><a class="enlace" href="./empleados.php">Empleados</a></li>
                     <li><a class="enlace" href="./perfil.php">Perfil</a></li>

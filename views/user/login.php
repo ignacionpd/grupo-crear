@@ -17,7 +17,7 @@ if (isset($_SESSION['user_data'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grupo CREAR SRL</title>
+    <title>Login | Grupo CREAR SRL</title>
     <!-- CSS -->
     <link rel="stylesheet" href="../../assets/css/estilos.css">
     <!-- FAVICON -->

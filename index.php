@@ -63,7 +63,6 @@ if (session_status() == PHP_SESSION_NONE) {
                 <?php if (isset($_SESSION["user_data"])): ?>
 
                     <ul class="navigationBarListUser">
-                        <li><a class="enlace" href="./views/user/solicitudes.php">Solicitudes</a></li>
                         <li><a class="enlace" href="./views/user/usuarios.php">Usuarios</a></li>
                         <li><a class="enlace" href="./views/user/empleados.php">Empleados</a></li>
                         <li><a class="enlace" href="./views/user/perfil.php">Perfil</a></li>

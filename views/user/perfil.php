@@ -21,7 +21,7 @@ $user = consultarDatos();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grupo CREAR SRL</title>
+    <title>Perfil | Grupo CREAR SRL</title>
     <!-- CSS -->
     <link rel="stylesheet" href="../../assets/css/estilos.css">
     <!-- FAVICON -->
@@ -63,7 +63,6 @@ $user = consultarDatos();
                 </ul>
 
                 <ul class="navigationBarListUser">
-                    <li><a class="enlace" href="./solicitudes.php">Solicitudes</a></li>
                     <li><a class="enlace" href="./usuarios.php">Usuarios</a></li>
                     <li><a class="enlace" href="./empleados.php">Empleados</a></li>
                     <li><a class="enlace active" href="#">Perfil</a></li>

@@ -16,7 +16,7 @@ $old = getFlash('old') ?? [];
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grupo CREAR SRL</title>
+    <title>Contacto | Grupo CREAR SRL</title>
     <!-- CSS -->
     <link rel="stylesheet" href="../assets/css/estilos.css">
     <!-- FAVICON -->
@@ -65,7 +65,6 @@ $old = getFlash('old') ?? [];
                 <?php if (isset($_SESSION["user_data"])): ?>
 
                     <ul class="navigationBarListUser">
-                        <li><a class="enlace" href="./user/solicitudes.php">Solicitudes</a></li>
                         <li><a class="enlace" href="./user/usuarios.php">Usuarios</a></li>
                         <li><a class="enlace" href="./user/empleados.php">Empleados</a></li>
                         <li><a class="enlace" href="./user/perfil.php">Perfil</a></li>
