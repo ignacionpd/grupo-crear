@@ -54,7 +54,8 @@ $datos = $_SESSION['datos'] ?? [];
 
                     <div class="contenedor_empresa">
                         <h1>Grupo CREAR SRL</h1>
-                        <p class="texto_logo">Instalaciones - Construcciones</p>
+                        <p class="texto_logo">Instalaciones y Rehabilitaciones</p>
+                        <p class="texto_logo">de Gas Natural</p>
                     </div>
                 </div>
             </div>
@@ -255,31 +256,31 @@ $datos = $_SESSION['datos'] ?? [];
                                                     <!-- IZQUIERDA: rows -->
                                                     <div class="emp_edit_fields">
                                                         <div class="edit_grid_row1">
-                                                            <div> 
-                                                                <label>Nombre</label> 
-                                                                <input type="text" name="user_name" value="<?= htmlspecialchars($e['nombre']) ?>"> 
+                                                            <div>
+                                                                <label>Nombre</label>
+                                                                <input type="text" name="user_name" value="<?= htmlspecialchars($e['nombre']) ?>">
                                                             </div>
-                                                            <div> 
-                                                                <label>Apellido</label> 
-                                                                <input type="text" name="user_lastname" value="<?= htmlspecialchars($e['apellido']) ?>"> 
+                                                            <div>
+                                                                <label>Apellido</label>
+                                                                <input type="text" name="user_lastname" value="<?= htmlspecialchars($e['apellido']) ?>">
                                                             </div>
-                                                            <div> 
-                                                                <label>DNI</label> 
-                                                                <input type="text" name="user_dni" value="<?= htmlspecialchars($e['dni']) ?>"> 
+                                                            <div>
+                                                                <label>DNI</label>
+                                                                <input type="text" name="user_dni" value="<?= htmlspecialchars($e['dni']) ?>">
                                                             </div>
-                                                            <div> 
-                                                                <label>CUIT</label> 
-                                                                <input type="text" name="user_cuit" value="<?= htmlspecialchars($e['cuit']) ?>"> 
+                                                            <div>
+                                                                <label>CUIT</label>
+                                                                <input type="text" name="user_cuit" value="<?= htmlspecialchars($e['cuit']) ?>">
                                                             </div>
-                                                            <div> 
-                                                                <label>Fecha Nac.</label> 
+                                                            <div>
+                                                                <label>Fecha Nac.</label>
                                                                 <input type="date"
                                                                     name="user_date"
-                                                                    value="<?= date('Y-m-d', strtotime($e['fecha_nacimiento'])) ?>"> 
+                                                                    value="<?= date('Y-m-d', strtotime($e['fecha_nacimiento'])) ?>">
                                                             </div>
-                                                            <div> 
-                                                                <label>Teléfono</label> 
-                                                                <input type="text" name="user_tel" value="<?= htmlspecialchars($e['telefono']) ?>"> 
+                                                            <div>
+                                                                <label>Teléfono</label>
+                                                                <input type="text" name="user_tel" value="<?= htmlspecialchars($e['telefono']) ?>">
                                                             </div>
                                                         </div>
 
@@ -345,7 +346,8 @@ $datos = $_SESSION['datos'] ?? [];
                     <img src="../../assets/images/logo.png" alt="logo Grupo CREAR SRL">
                     <div>
                         <p>Grupo CREAR SRL</p>
-                        <span>Instalaciones - Construcciones</span>
+                        <span>Instalaciones y Rehabilitaciones</span>
+                        <span>de Gas Natural</span>
                     </div>
                 </div>
 

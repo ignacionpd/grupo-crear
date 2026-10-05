@@ -11,7 +11,7 @@
 
 :root {
     /* Definir las propiedades reutilizables */
-    --color-naranja: rgb(211, 95, 0);
+    --color-naranja: rgb(245, 114, 6);
 }
 
 @font-face {
@@ -367,7 +367,7 @@ h3 {
     width: max-content;
     margin: 15px auto;
     position: static;
-    display: block;
+    display: none;
 }
 
 .aviso_registro:empty {
@@ -994,7 +994,7 @@ h2 {
 
 .faq-section h4 {
     font-size: 26px;
-    background: #d3d3d3;
+    background: var(--color-naranja);
     padding: 10px 15px;
     border-radius: 6px;
 }
@@ -2175,9 +2175,13 @@ h2 {
     }
 
     .carousel-container {
-        max-width: 80vw;
-        padding-bottom: 2em;
-        margin: 1em auto;
+        max-width: 100vw;
+        padding: 0;
+        margin: 2em 0;
+    }
+
+    .carousel-fade {
+        border-radius: 0;
     }
 
     .carousel-btn {
@@ -2255,11 +2259,13 @@ h2 {
     .container_form {
         width: 100%;
         margin: 0 10px;
-        padding: 0 15px;
+        padding:15px;
     }
 
-    .container_form h3 {
-        margin-bottom: 0;
+    .container_form h3,
+    .container_datos_contacto h3 {
+        font-size: 20px;
+        margin: 2em 0;
     }
 
     input,
@@ -2299,12 +2305,24 @@ h2 {
         font-size: 14px;
     }
 
-    .faq-section span {
+    .faq-section {
+        padding: 20px;
+    }
+
+    .faq-section h4,
+    .faq-section p,
+    .faq-section ul li{
+        font-size: 16px;
+    }
+
+    .faq-section span,
+    .faq-section p,
+    .faq-section ul{
         margin: 20px 0;
     }
 
-    .faq-section h4 {
-        font-size: 20px;
+    .btn_contactar {
+        margin: 8px;
     }
 
     .btn_contactar a {
@@ -2321,12 +2339,12 @@ h2 {
 
     /* Footer */
     .contenedor_footer {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 6fr 1fr;
     }
 
     .iconos {
-        width: 15px;
-        height: 15px;
+        width: 20px;
+        height: 20px;
     }
 
     .contacto_pie {
@@ -2335,7 +2353,7 @@ h2 {
     }
 
     .contacto_flex_row a {
-        font-size: 10px;
+        font-size: 12px;
     }
 
     .logo_pie {
@@ -2350,6 +2368,7 @@ h2 {
 
     .logo_pie div p {
         font-size: 13px;
+        margin-bottom: 3px;
     }
 
     .logo_pie div span {
@@ -2362,21 +2381,21 @@ h2 {
     }
 
     .contacto_pie_email img {
-        width: 10px;
-        height: 10px;
+        width: 18px;
+        height: 18px;
         background-color: white;
         padding: 1px;
         margin-right: 3px;
     }
 
     .contacto_pie_email a {
-        font-size: 8px;
+        font-size: 10px;
     }
 
     .aviso_legal {
         display: flex;
         justify-content: flex-end;
-        font-size: 8px;
+        font-size: 10px;
         opacity: 0.5;
         color: white;
     }

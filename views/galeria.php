@@ -32,7 +32,8 @@ if (session_status() == PHP_SESSION_NONE) {
 
                     <div class="contenedor_empresa">
                         <h1>Grupo CREAR SRL</h1>
-                        <p class="texto_logo">Instalaciones - Construcciones</p>
+                        <p class="texto_logo">Instalaciones y Rehabilitaciones</p>
+                        <p class="texto_logo">de Gas Natural</p>
                     </div>
                 </div>
             </div>
@@ -125,7 +126,8 @@ if (session_status() == PHP_SESSION_NONE) {
                     <img src="../assets/images/logo_simbolo.png" alt="logo Grupo CREAR SRL">
                     <div>
                         <p>Grupo CREAR SRL</p>
-                        <span>Instalaciones - Construcciones</span>
+                        <span>Instalaciones y Rehabilitaciones</span>
+                        <span>de Gas Natural</span>
                     </div>
                 </div>
 
