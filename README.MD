@@ -26,7 +26,8 @@
 |--logout.php: Controlador encargado del cierre de sesión de los usuarios.  
 |--registrarAdmin.php: Es una página donde el desarrollador genera el hash de la contraseña solicitada para el usuario "admin" donde luego la ingresamos manualmente a la BD junto con el resto de los datos.  
 |--.env.php: Contiene variables donde se guarda la información relevante para la conexión con la base de datos.  
-|--.htaccess: Archivo de Apache donde configuramos el código para proteger el archivo .env.php (contenido importante)
+|--.htaccess: Archivo de Apache donde configuramos el código para proteger el archivo .env.php (contenido importante)  
+|---config.js: Archivo protegido, que contiene los datos sensibles del propietario de la web para la configuración de PHPMailer (configuración SMTP).
 
 |--CONTROLLERS/user: Carpeta que contiene los controladores exclusivos para las vistas de los usuarios registrados.  
 |---c_empleados.php: Controlador para comunicarse con el formulario de actualización de datos de los empleados y el registro de uno nuevo o el borrado de los mismos (usuario admin) en la vista empleados.php.  
@@ -34,6 +35,8 @@
 |---c_usuarios.php: Corrobora los datos ingresados en la vista usuarios.php tanto para la actualización de datos, el borrado de algún registro o la creación de un usuario nuevo (sólo el admin en estos últimos 2).
 
 |-CONTROLLERS/VALIDATIONS/v_inputData.php: Carpeta que contiene (en este caso uno solo -> v_inputData.php) los archivos con las validaciones de los datos ingresados a los formularios en cada formulario de ingreso de datos, devolviendo a los controladores los resultados de las comprobaciones necesarias (regex, por ejemplo).
+
+|-CONTROLLERS/PHPMailer/src: Carpeta que contiene los archivos PHPMailer para su funcionamiento en el formulario de contacto.php.
 
 |-CONFIG: Carpeta contenedora de los archivos principales referidos a la configuración y protección de cierta información.
 |--config.php: Archivo donde se asegura que las páginas (que lo llamen previamente) obtengan los errores de manera más segura si los hubiesen.  
@@ -48,10 +51,13 @@
 
 |-SCRIPTS:  
 |---carousel.js: Controla el carousel de imágenes de index.php.  
+|---efectos.js: Script que contiene la configuración de efectos de la web que están configurados en CSS (no librerías).  
 |---show_password.js: Controla el checkbox para visualizar la contraseña al registrarse en usuarios.php.  
 |---v_contacto.js: Script que controla los datos ingresados en el formulario de contacto en contacto.php.  
 |---v_empleados.js: Realiza la animación y verificación de los datos ingresados en la vista de empleados.php en los formularios de registro y actualización del mismo.  
 |---v_login.js: Verifica la información introducida para el login del usuario en login.php.  
 |---v_perfil.js: Controla también los formularios de actualización de perfil y cambio de contraseña en perfil.php.  
 |---v_preguntas.js: Configura el "scrollspy" de la vista preguntas_frecuentes.php.  
-|---v_usuarios.js: Realiza las mismas funciones de animación y control en la vista usuarios.php.  
+|---v_usuarios.js: Realiza las mismas funciones de animación y control en la vista usuarios.php.
+
+|-.github/vowrkflows: Contiene el archivo .yml con las instrucciones para que cada modificación que se haga en el repositorio, se actualice automáticamente en el alojamiento web que tiene en la página Infinity Free en este momento. Previamente hay que guardar en la sección de "Settings/Secret and variables/Actions" los datos de conexión al servidor de ese proveedor mediante la creación de variables secretas/ocultas.
