@@ -2,15 +2,14 @@
 
 |- index.php: Es la página principal donde se encuentra una breve presentación de la empresa, junto con un carousel de imágenes de trabajos realizados y una lista con logos de algunos de sus clientes importantes. Tres vistas mas que son las de galería, preguntas frecuentes y contacto. Además, se podrán visualizar cuatro vistas más que se podrán acceder al loguearse con un usuario registrado: solicitudes (de contacto), usuarios, empleados y perfil. 
 
-|-VIEWS: Carpeta donde contendrán las vistas de las páginas que accede cualquier visitante.
-|--galeria.php: Contiene diversas imágenes sobre algunos de los trabajos realizados.
-|--contacto.php: Vista que contiene el formulario de solicitud de contacto con la empresa.
-|--preguntas_frecuentes.php: Vista en la cual se describen preguntas habituales que suelen consultar los clientes a la empresa.
+|-VIEWS: Carpeta donde contendrán las vistas de las páginas que accede cualquier visitante.  
+|--galeria.php: Contiene diversas imágenes sobre algunos de los trabajos realizados.  
+|--contacto.php: Vista que contiene el formulario de solicitud de contacto con la empresa.  
+|--preguntas_frecuentes.php: Vista en la cual se describen preguntas habituales que suelen consultar los clientes a la empresa.  
 
-|-VIEWS/user: Carpeta que continene las vistas de acceso exclusivo para los usuarios registrados.
-|--solicitudes.php: Página que contiene la  lista de las solicitudes recibidas pendiente de ser resueltas o respondidas, donde el usuario registrado puede modificarlas o borrarlas. 
-|--usuarios.php: Vista donde se encuentra la lista de usuarios registrados (empleados administrativos / gerenciales de la empresa) con todos los datos principales. Si el usuario logueado es el "admin" (id_usuario "1") puede editar los datos de los mismos menos la contraseña y nombre de usuario. Tiene también el permiso de borrar al usuario y crear uno nuevo junto con su nombre de usuario y contraseña.
-|--empleados.php: Al igual que la página anterior, se muestran en una lista los empleados (operarios) registrados y sus datos principales. Aquí también el usuario admin puede editar los datos actuales de ellos, borrar el registro, como también se le habilita un formulario para agregar a un empleado nuevo. Mientas que los usuarios restantes, sólo pueden visualizar la información.
+|-VIEWS/user: Carpeta que continene las vistas de acceso exclusivo para los usuarios registrados.  
+|--usuarios.php: Vista donde se encuentra la lista de usuarios registrados (empleados administrativos / gerenciales de la empresa) con todos los datos principales. Si el usuario logueado es el "admin" (id_usuario "1") puede editar los datos de los mismos menos la contraseña y nombre de usuario. Tiene también el permiso de borrar al usuario y crear uno nuevo junto con su nombre de usuario y contraseña.  
+|--empleados.php: Al igual que la página anterior, se muestran en una lista los empleados (operarios) registrados y sus datos principales. Aquí también el usuario admin puede editar los datos actuales de ellos, borrar el registro, como también se le habilita un formulario para agregar a un empleado nuevo. Mientas que los usuarios restantes, sólo pueden visualizar la información.  
 |--perfil.php: Aquí cada usuario podrá actualizar sus datos personales y su contraseña pero no el nombre de usuario.
 
 |-VIEWS/ERRORS/error500.html: Carpeta y archivo único que se utilizará para redirigir hacia ahí a un usuario ante cualquier error grave de la página.
@@ -44,16 +43,15 @@
 |--CSS/estilos.css: Carpeta y archivo que contiene todos los estilos de la web.  
 |--FAVICON: Carpeta que contiene todos los archivos favicon de la web.  
 |--iconos: Carpeta que contiene todos los archivos de iconos de la web (email, whatsapp, etc).  
-|--IMAGES: Carpeta que contiene los archivos de imágnes de la web como los del encabezado, las imagenes de la presentación, archivos de logos de los clientes habituales.
+|--IMAGES: Carpeta que contiene los archivos de imágnes de la web como los del encabezado, las imagenes de la presentación, archivos de logos de los clientes habituales.  
 |--SCRIPTS: Carpeta que contiene los archivos scripts de las distintas vistas.
 
-|-SCRIPTS:
-|---carousel.js: Controla el carousel de imágenes de index.php.
-|---show_password.js: Controla el checkbox para visualizar la contraseña al registrarse en usuarios.php.
-|---v_contacto.js: Script que controla los datos ingresados en el formulario de contacto en contacto.php.
-|---v_empleados.js: Realiza la animación y verificación de los datos ingresados en la vista de empleados.php en los formularios de registro y actualización del mismo.
-|---v_login.js: Verifica la información introducida para el login del usuario en login.php.
-|---v_perfil.js: Controla también los formularios de actualización de perfil y cambio de contraseña en perfil.php.
-|---v_preguntas.js: Configura el "scrollspy" de la vista preguntas_frecuentes.php.
-|---v_solicitudes.js: Corrobora las modificaciones hechas en el registro de alguna solicitud recibida de contacto por parte de algún usuario visitante, mediante la vista contacto.php.
-|---v_usuarios.js: Realiza las mismas funciones de animación y control en la vista usuarios.php.
+|-SCRIPTS:  
+|---carousel.js: Controla el carousel de imágenes de index.php.  
+|---show_password.js: Controla el checkbox para visualizar la contraseña al registrarse en usuarios.php.  
+|---v_contacto.js: Script que controla los datos ingresados en el formulario de contacto en contacto.php.  
+|---v_empleados.js: Realiza la animación y verificación de los datos ingresados en la vista de empleados.php en los formularios de registro y actualización del mismo.  
+|---v_login.js: Verifica la información introducida para el login del usuario en login.php.  
+|---v_perfil.js: Controla también los formularios de actualización de perfil y cambio de contraseña en perfil.php.  
+|---v_preguntas.js: Configura el "scrollspy" de la vista preguntas_frecuentes.php.  
+|---v_usuarios.js: Realiza las mismas funciones de animación y control en la vista usuarios.php.  
