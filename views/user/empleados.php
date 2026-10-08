@@ -54,8 +54,8 @@ $datos = $_SESSION['datos'] ?? [];
 
                     <div class="contenedor_empresa">
                         <h1>Grupo CREAR SRL</h1>
-                        <p class="texto_logo">Instalaciones y Rehabilitaciones</p>
-                        <p class="texto_logo">de Gas Natural</p>
+                        <p class="texto_logo">SOLUCIONES INTEGRALES DE GAS NATURAL</p>
+                        <p class="subtexto_logo">Instalaciones domiciliarias, comerciales e industriales</p>
                     </div>
                 </div>
             </div>
@@ -346,8 +346,8 @@ $datos = $_SESSION['datos'] ?? [];
                     <img src="../../assets/images/logo.png" alt="logo Grupo CREAR SRL">
                     <div>
                         <p>Grupo CREAR SRL</p>
-                        <span>Instalaciones y Rehabilitaciones</span>
-                        <span>de Gas Natural</span>
+                        <span class="texto_logo_pie">SOLUCIONES INTEGRALES DE GAS NATURAL</span>
+                        <span class="subtexto_logo_pie">Instalaciones domiciliarias, comerciales e industriales</span>
                     </div>
                 </div>
 
