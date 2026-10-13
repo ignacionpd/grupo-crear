@@ -17,7 +17,7 @@ jobs:
 
     steps:
       - name: Obtener el proyecto
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Instalar cliente FTP
         run: sudo apt-get update && sudo apt-get install --yes lftp
@@ -34,6 +34,6 @@ jobs:
           set net:max-retries 2
           set net:timeout 20
           open -u "$FTP_USERNAME","$FTP_PASSWORD" "$FTP_HOST"
-          mirror --reverse --only-newer --no-perms --verbose --exclude=^\.git/ --exclude=^\.github/ --exclude=^controllers/config\.php$ --exclude=^controllers/.env\.php$ --exclude=^controllers/contacto-errors\.log$ ./ "$FTP_REMOTE_DIR"
+          mirror --reverse --transfer-all --no-perms --verbose --exclude=^\.git/ --exclude=^\.github/ --exclude=^controllers/config\.php$ --exclude=^controllers/.env\.php$ --exclude=^controllers/contacto-errors\.log$ ./ "$FTP_REMOTE_DIR"
           bye
           EOF

@@ -58,14 +58,14 @@ body {
     display: flex;
     align-items: center;
     width: 100%;
-    height: 150px;
+    min-height: 150px;   /* mínimo 150px; crece si el contenido no cabe (móvil) */
 }
 
 .mi_contenedor {
     display: grid;
     width: 100%;
     min-height: 100%;
-    grid-template-rows: auto 1fr 150px;
+    grid-template-rows: auto 1fr minmax(150px, auto);
     grid-template-columns: 100%;
     grid-template-areas:
         "header"
@@ -374,6 +374,50 @@ h3 {
     font-size: 15px;
     opacity: 0.5;
     color: white;
+}
+
+/* Columna central del footer: logo + descripción y, debajo de todo, los derechos reservados centrados */
+.footer__centro {
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.footer__centro .aviso_legal {
+    justify-content: center;   /* gana a .aviso_legal (alineado a la derecha) */
+    text-align: center;
+}
+
+/* Crédito "Diseñado por" en la esquina inferior derecha del footer, pegado al borde de la pantalla */
+.mi_pie {
+    position: relative;
+}
+
+.mi_pie .footer__credito {
+    position: absolute;
+    right: 12px;
+    bottom: 8px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    color: white;
+    text-decoration: none;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.mi_pie .footer__credito img {
+    display: block;
+    width: auto;
+    height: 17px;
+}
+
+.mi_pie .footer__credito:hover,
+.mi_pie .footer__credito:focus-visible {
+    opacity: 1;
 }
 
 /* -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
@@ -1809,6 +1853,16 @@ h2 {
         font-size: 15px;
     }
 
+    /* Crédito proporcional al texto de derechos (10px en este rango) */
+    .mi_pie .footer__credito {
+        font-size: 11px;
+        gap: 5px;
+    }
+
+    .mi_pie .footer__credito img {
+        height: 14px;
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -2086,6 +2140,18 @@ h2 {
         font-size: 10px;
         opacity: 0.5;
         color: white;
+    }
+
+    /* Crédito más pequeño en móvil, proporcional al footer */
+    .mi_pie .footer__credito {
+        right: 8px;
+        bottom: 6px;
+        gap: 4px;
+        font-size: 10px;
+    }
+
+    .mi_pie .footer__credito img {
+        height: 12px;
     }
 }
 

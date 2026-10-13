@@ -215,13 +215,16 @@ if (session_status() == PHP_SESSION_NONE) {
                 </div>
 
                 <!-- LOGO GRUPO CREAR SRL -->
-                <div class="logo_pie">
-                    <img src="./assets/images/logo_simbolo.png" alt="logo Grupo CREAR SRL">
-                    <div>
-                        <p>Grupo CREAR SRL</p>
-                        <span class="texto_logo_pie">SOLUCIONES INTEGRALES DE GAS NATURAL</span>
-                        <span class="subtexto_logo_pie">Instalaciones domiciliarias, comerciales e industriales</span>
+                <div class="footer__centro">
+                    <div class="logo_pie">
+                        <img src="./assets/images/logo_simbolo.png" alt="logo Grupo CREAR SRL">
+                        <div>
+                            <p>Grupo CREAR SRL</p>
+                            <span class="texto_logo_pie">SOLUCIONES INTEGRALES DE GAS NATURAL</span>
+                            <span class="subtexto_logo_pie">Instalaciones domiciliarias, comerciales e industriales</span>
+                        </div>
                     </div>
+                    <small class="aviso_legal">&copy; Todos los derechos reservados</small>
                 </div>
 
                 <!-- AVISO LEGAL COPYRIGHT -->
@@ -230,9 +233,11 @@ if (session_status() == PHP_SESSION_NONE) {
                         <img class="iconos" src="./assets/iconos/email.svg" alt="correo Grupo CREAR SRL" width="94" height="32">
                         <a href="mailto:grupocrear@live.com">grupocrear@live.com</a>
                     </div>
-                    <small class="aviso_legal">&copy; Todos los derechos reservados</small>
                 </div>
             </div>
+            <a href="https://iprieto.freedev.app" target="_blank" rel="noopener" class="footer__credito" aria-label="Diseñado por Ignacio Prieto (se abre en una pestaña nueva)">
+                Diseñado por <img src="./assets/images/ip-logo.svg" alt="Ignacio Prieto" width="30" height="17">
+            </a>
         </footer>
     </div>
 
