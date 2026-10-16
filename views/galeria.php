@@ -78,6 +78,7 @@ if (session_status() == PHP_SESSION_NONE) {
                 <div class="galeria">
                     <img src="../assets/images/1.jpeg" alt="Grupo Crear SRL">
                     <img src="../assets/images/2.jpeg" alt="Grupo Crear SRL">
+                    <img src="../assets/images/2.1.jpeg" alt="Grupo Crear SRL">
                     <img src="../assets/images/3.jpeg" alt="Grupo Crear SRL">
                     <img src="../assets/images/4.jpeg" alt="Grupo Crear SRL">
                     <img src="../assets/images/5.jpeg" alt="Grupo Crear SRL">

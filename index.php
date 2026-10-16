@@ -106,6 +106,10 @@ if (session_status() == PHP_SESSION_NONE) {
                         </div>
 
                         <div class="carousel-slide">
+                            <img src="./assets/images/2.1.jpeg" alt="Grupo Crear SRL">
+                        </div>
+
+                        <div class="carousel-slide">
                             <img src="./assets/images/3.jpeg" alt="Grupo Crear SRL">
                         </div>
 
@@ -169,19 +173,20 @@ if (session_status() == PHP_SESSION_NONE) {
                     <img src="./assets/images/logos_clientes/standrews.png" alt="Grupo Crear SRL">
                     <img src="./assets/images/logos_clientes/marin.png" alt="Grupo Crear SRL">
                     <img src="./assets/images/logos_clientes/ungs.png" alt="Grupo Crear SRL">
-                    <img src="./assets/images/logos_clientes/sofitel.png" alt="Grupo Crear SRL">
                     <img src="./assets/images/logos_clientes/austral.png" alt="Grupo Crear SRL">
+                    <img src="./assets/images/logos_clientes/parolaccia.png" alt="Grupo Crear SRL">
                     <img src="./assets/images/logos_clientes/green_eat.png" alt="Grupo Crear SRL">
+                    <img src="./assets/images/logos_clientes/sofitel.png" alt="Grupo Crear SRL">
                     <img src="./assets/images/logos_clientes/arquenna.png" alt="Grupo Crear SRL">
                     <img src="./assets/images/logos_clientes/cabrera.png" alt="Grupo Crear SRL">
-                    <img src="./assets/images/logos_clientes/caroline.png" alt="Grupo Crear SRL">
+                    <img src="./assets/images/logos_clientes/victor_lopez.png" alt="Grupo Crear SRL">
                     <img src="./assets/images/logos_clientes/de_franco.png" alt="Grupo Crear SRL">
                     <img src="./assets/images/logos_clientes/dibona.png" alt="Grupo Crear SRL">
                     <img src="./assets/images/logos_clientes/dock.png" alt="Grupo Crear SRL">
                     <img src="./assets/images/logos_clientes/federico_negro.png" alt="Grupo Crear SRL">
                     <img src="./assets/images/logos_clientes/pac.png" alt="Grupo Crear SRL">
                     <img src="./assets/images/logos_clientes/sallemi.png" alt="Grupo Crear SRL">
-                    <img src="./assets/images/logos_clientes/victor_lopez.png" alt="Grupo Crear SRL">
+                    <img src="./assets/images/logos_clientes/caroline.png" alt="Grupo Crear SRL">
                     <img src="./assets/images/logos_clientes/mastrangelo.png" alt="Grupo Crear SRL">
                 </div>
             </section>
