@@ -89,6 +89,8 @@ if (session_status() == PHP_SESSION_NONE) {
                     <img src="../assets/images/10.jpeg" alt="Grupo Crear SRL">
                     <img src="../assets/images/11.jpg" alt="Grupo Crear SRL">
                     <img src="../assets/images/12.jpg" alt="Grupo Crear SRL">
+                    <img src="../assets/images/13.jpeg" alt="Grupo Crear SRL">
+                    <img src="../assets/images/14.jpg" alt="Grupo Crear SRL">
                 </div>
             </section>
 

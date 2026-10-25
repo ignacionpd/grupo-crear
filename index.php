@@ -148,6 +148,12 @@ if (session_status() == PHP_SESSION_NONE) {
                         <div class="carousel-slide">
                             <img src="./assets/images/12.jpg" alt="Grupo Crear SRL">
                         </div>
+                        <div class="carousel-slide">
+                            <img src="./assets/images/13.jpeg" alt="Grupo Crear SRL">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="./assets/images/14.jpg" alt="Grupo Crear SRL">
+                        </div>
 
                         <!-- Flechas -->
                         <button class="carousel-btn prev">&#10094;</button>
